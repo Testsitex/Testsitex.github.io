@@ -705,11 +705,7 @@ color: var(--lions-weiß);
 .hidden-content{
   display: none;
 }
-.slider div {
-  width: 100%;
-  height: 75vh;
-}
-.slider div img {
+/* .slider div img {
   width: 100%;
   height: auto;
 }
@@ -739,5 +735,29 @@ color: var(--lions-weiß);
 .slick-dots li.slick-active button{
   border: 3px solid var(--lions-blau)!important;
   background-color: transparent!important;
+} */
+.swiper {
+  width: 100%;
+  height: 70vh;
+  color: var(--lions-weiß);
 }
-
+.bild1{
+  background-image: url("/img/slider-1.jpg");
+  background-size: cover;
+  background-color: var(--lions-blau);
+}
+.bild2{
+  background-image: url("/img/slider-2.jpg");
+  background-size: cover;
+  background-color: var(--lions-blau);
+}
+.bild3{
+  background-image: url("/img/slider-1.jpg");
+  background-size: cover;
+  background-color: var(--lions-blau);
+}
+.bild4{
+  background-image: url("/img/slider-2.jpg");
+  background-size: cover;
+  background-color: var(--lions-blau);
+}

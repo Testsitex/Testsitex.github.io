@@ -15,8 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Lions Club Zell a.H</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
 </head>
 <body>
     <section class="hero" id="home">
@@ -467,6 +466,7 @@
             </div>
         </div>
     </div>
+    <!-- Ab hier kopieren-->
     <div class="hidden-content">
         <div class="artikel-weiss">
             <div class="artikel-container">
@@ -538,7 +538,7 @@
             </div>
         </div>
     </div>
-        <div class="hidden-content">
+    <div class="hidden-content">
         <div class="artikel-blau">
             <div class="artikel-container">
                 <div class="artikel-oberteil">
@@ -606,6 +606,13 @@
             </div>
         </div>
     </div>
+    <!-- bis hier kopieren-->
+
+
+
+
+
+     <!-- über diesem kommentar einfügen-->
         <div class="weitere-artikel-laden">
             <a class="load-artikel" onclick="next2()" href="javascript:void(0);">Weitere Artikel laden</a>
         </div>
@@ -617,12 +624,83 @@
             <p class="content_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem neque alias debitis? Sed veniam laudantium sapiente earum quam dignissimos, optio aliquam voluptatem maiores. Atque, a soluta eaque asperiores, id itaque, dolore recusandae error aspernatur rerum distinctio ad tenetur magni iure? Rem, temporibus! Veniam dolore quisquam adipisci incidunt quis, suscipit voluptates!</p>
             <h2 class="content_subheading">Regionale hilfe</h2>
 
-            <div class="slider">
-                <div class="slider-bild"><img src="img/slider-1.jpg" alt=""><h1>hallo</h1></div>
-                <div class="slider-bild"><img src="img/slider-2.jpg" alt=""><h1>hallo</h1></div>
-                <div class="slider-bild"><img src="img/slider-1.jpg" alt=""><h1>hallo</h1></div>
-                <div class="slider-bild"><img src="img/slider-2.jpg" alt=""><h1>hallo</h1></div>
-              </div>
+
+                <!-- Slider main container -->
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                        <div class="swiper-slide bild1">
+                            <div class="slider-wrapper">
+                            <div class="title inner-s">Slide 1</div>
+                            <div class="subtitle inner-s">Subtitle</div>
+                            <div class="text inner-s">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                              </p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bild2">
+                            <div class="title">Slide 2</div>
+                            <div class="subtitle">Subtitle</div>
+                            <div class="text">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bild3">
+                            <div class="title">Slide 3</div>
+                            <div class="subtitle">Subtitle</div>
+                            <div class="text">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                              </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide bild4">
+                            <div class="title">Slide 4</div>
+                            <div class="subtitle">Subtitle</div>
+                            <div class="text">
+                              <p>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                                dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+                                laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+                                Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+                                Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+                                ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+                                tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+                              </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
 
             <h2 class="content_subheading">Überregionale hilfe</h2>
             <div class="ueberregional-container">
@@ -781,6 +859,7 @@
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

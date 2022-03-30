@@ -1,3 +1,7 @@
+$(document).ready(function(){
+
+//menubalken
+
 const sectionAll = document.querySelectorAll('section[id]');
 window.addEventListener('scroll', () => {
   const scrollY = window.pageYOffset;
@@ -17,20 +21,20 @@ window.addEventListener('scroll', () => {
     }
   });
 });
-// Cache selectors
+
+// scroller
+
 var lastId,
  topMenu = $("#mainNav"),
  topMenuHeight = topMenu.outerHeight()-31,
- // All list items
+
  menuItems = topMenu.find("a"),
- // Anchors corresponding to menu items
+
  scrollItems = menuItems.map(function(){
    var item = $($(this).attr("href"));
     if (item.length) { return item; }
  });
 
-// Bind click handler to menu items
-// so we can get a fancy scroll animation
 menuItems.click(function(e){
   var href = $(this).attr("href"),
       offsetTop = href === "#" ? 0 : $(href).offset().top-topMenuHeight;
@@ -42,19 +46,41 @@ menuItems.click(function(e){
 
 // slider
 
-$(document).ready(function(){
-  $('.slider').slick({
-  infinite: true,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  dots: true,
-  adaptiveHeight: true,
-  autoplay: true,
-  autoplaySpeed: 15000,
-  infinite: true
-});
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+          clickable: true,
+    // type: "progressbar",
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
 });
 
+//   $('.slider').slick({
+//   infinite: true,
+//   slidesToShow: 1,
+//   slidesToScroll: 1,
+//   dots: true,
+//   adaptiveHeight: true,
+//   autoplay: true,
+//   autoplaySpeed: 15000,
+//   infinite: true
+// });
+});
 //loader
 function next2() {
   var notVisible = -1;
