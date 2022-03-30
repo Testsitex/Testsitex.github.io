@@ -40,24 +40,32 @@ menuItems.click(function(e){
   e.preventDefault();
 });
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  direction: 'horizontal',
-  loop: true,
+// slider
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
+$(document).ready(function(){
+  $('.slider').slick({
+  infinite: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  adaptiveHeight: true,
+  autoplay: true,
+  autoplaySpeed: 15000,
+  infinite: true
 });
+});
+
+//loader
+$(".hidden-content:eq( 0 )").show();
+$(".hidden-content:eq( 1 )").show();
+
+function next2() {
+  var notVisible = -1;
+  $('.hidden-content').each(function() {
+    if ($(this).css('display') !== 'none') {
+      notVisible = notVisible + 1;
+    }
+  });
+  $(".hidden-content:eq( " + (notVisible + 1) + " )").show();
+  $(".hidden-content:eq( " + (notVisible + 2) + " )").show();
+}
