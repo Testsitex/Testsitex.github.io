@@ -2,13 +2,13 @@
 !/!  Projektplan überprüfen Aufgaben  !/!
 
 
-1. Sind alle Alt Texte richtig bestückt
+1. Sind alle Alt Texte richtig bestückt -- OK
 
-2. Hab ich noch überflüssigen code in css/html/js
+2. Hab ich noch überflüssigen code in css/html/js Validator von js /css / html
 
 3. Link bei über uns Anpassen von gestaltung
 
-4. Kommentare optimiren und für nächste Person (pflege der website) anpassen z.b. = hier "einfügen"
+4. Kommentare optimiren und für nächste Person (pflege der website) anpassen z.b. = hier "einfügen" -- OK
 
 5. Überschriften der Artikel bei Aktuelles verkleinern
 
