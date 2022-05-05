@@ -1,0 +1,12 @@
+
+
+1. Rand um Bilder beim Vorstand mit css versuchen
+
+
+2. sind alle on hover css auch active css für handy
+
+
+3. google analytiks einbauen
+
+
+
